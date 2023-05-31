@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Order.css";
+import OrderStyles from "./Order.module.css";
 import { AiTwotoneStar } from "react-icons/ai";
 import axios from "axios";
 function Order() {
@@ -17,7 +17,7 @@ function Order() {
 
   return (
     <>
-      <div className="parent">
+      <div className={OrderStyles.parent}>
         {data.map((item) => (
           <div>
             <img src={item.image} alt="" />
@@ -26,7 +26,7 @@ function Order() {
             {/* <span>
               <AiTwotoneStar color="yellow" size="20px" />
             </span> */}
-            <h3>Price: {item.price}</h3>
+            <h3 className={OrderStyles.price}>Price: ${item.price}</h3>
           </div>
         ))}
       </div>

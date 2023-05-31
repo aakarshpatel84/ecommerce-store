@@ -1,9 +1,9 @@
 import React from "react";
-import "./About.css";
+import AboutStyles from "./About.module.css";
 function About() {
   return (
     <>
-      <div>
+      <div className={AboutStyles.about_parent}>
         <p>
           Welcome to our online store!🛍️ We're delighted to have you here. At
           Aakarsh Store, we are passionate about delivering an exceptional

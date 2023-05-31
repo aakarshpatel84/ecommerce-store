@@ -9,12 +9,13 @@ nav {
 }
 .link {
   /* list-style: none; */
-  transition: all 0.5s ease;
   text-decoration: none;
   color: white;
 }
 .link:hover {
   text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
 }
 
 /* Mobile Screens */
@@ -30,6 +31,13 @@ nav {
 
 /* Laptops */
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .link {
+    font-size: 1rem;
+  }
+}
+
+/* Xs */
+@media only screen and (max-width: 653px) and (min-width: 280px) {
   .link {
     font-size: 1rem;
   }
