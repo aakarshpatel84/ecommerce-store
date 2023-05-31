@@ -1,15 +1,14 @@
 import React from "react";
+import "./About.css";
 function About() {
   return (
     <>
       <div>
-        <div>
-          <h2>
-            Welcome to our online store! We're delighted to have you here. At
-            Aakarsh Store, we are passionate about delivering an exceptional
-            shopping experience to our valued customers.
-          </h2>
-        </div>
+        <p>
+          Welcome to our online store!🛍️ We're delighted to have you here. At
+          Aakarsh Store, we are passionate about delivering an exceptional
+          shopping experience to our valued customers.
+        </p>
 
         <div>
           <h3>Our Story:</h3>
@@ -79,7 +78,7 @@ function About() {
         </div>
 
         <div>
-          <p>Happy shopping! Aakarsh Store Team</p>
+          <p>Happy shopping!🛒 Aakarsh Store Team</p>
         </div>
       </div>
     </>
