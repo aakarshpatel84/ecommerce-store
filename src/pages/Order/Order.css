@@ -1,0 +1,65 @@
+.parent > div {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid red;
+  gap: 20px;
+  margin-top: 10px;
+  height: 50px;
+  text-align: center;
+  /* margin: auto; */
+}
+.parent img {
+  width: 50px;
+}
+span {
+  /* margin-right: -10px; */
+}
+.parent > div > p + p {
+  background-color: green;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .parent > div {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    padding: 20px;
+    font-size: 9px;
+  }
+  .parent img {
+    width: 30px;
+  }
+  .parent > div > h3 {
+    font-size: 8px;
+  }
+}
+
+/* Tab */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .parent > div {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    padding: 20px;
+    font-size: 9px;
+  }
+  .parent img {
+    width: 30px;
+  }
+  .parent > div > h3 {
+    font-size: 8px;
+  }
+}
+
+/* Laptops */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .link {
+    font-size: 1rem;
+  }
+}
