@@ -13,8 +13,7 @@ This is an e-commerce website project built with React.js. It provides a complet
 
 1. Clone the repository: `git clone https://github.com/your-username/e-commerce-website.git`
 2. Install dependencies: `npm install`
-3. Configure the database connection in the `config.js` file.
-4. Run the application: `npm start`
+3. Run the application: `npm start`
 5. Access the website at `http://localhost:3000`
 
 ## Contributing
