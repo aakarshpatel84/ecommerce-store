@@ -6,7 +6,6 @@ This is an e-commerce website project built with React.js. It provides a complet
 
 - **Product Catalog**: Browse and search through a wide range of products available for purchase.
 - **Shopping Cart**: Add products to the cart, update quantities, and proceed to checkout.
-- **Payment Processing**: Securely process payments using popular payment gateways such as [Gateway Name].
 - **Responsive Design**: The website is optimized for various devices, ensuring a seamless shopping experience on desktop and mobile.
 
 ## Installation
