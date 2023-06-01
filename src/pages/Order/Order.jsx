@@ -4,13 +4,18 @@ import { AiTwotoneStar } from "react-icons/ai";
 import axios from "axios";
 function Order() {
   let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+  const [cartDatas, setCartDatas] = useState(cartData);
+  console.log("cartData1: ", cartData);
   const handleConfirmPayment = () => {
+    localStorage.removeItem("cartData");
+    setCartDatas([]);
     alert("Payment Successfull");
   };
+
   return (
     <>
       <div className={OrderStyles.parent}>
-        {cartData.map((item) => (
+        {cartDatas.map((item) => (
           <div>
             <img src={item.image} alt="" />
             <p>Title: {item.title} </p>

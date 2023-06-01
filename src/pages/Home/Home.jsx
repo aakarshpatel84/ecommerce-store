@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart, setProducts } from "../../app/globalSlice";
+import { setProducts } from "../../app/globalSlice";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -34,9 +34,14 @@ function Home() {
   const handleAddToCart = (product) => {
     // dispatch(addToCart(product));
     // product.quantity = 1;
-    let newProduct = { ...product, quantity: 1 };
-    cartData = [...cartData, newProduct];
-    localStorage.setItem("cartData", JSON.stringify(cartData));
+    let isCheck = cartData.filter((el) => el.id === product.id);
+    if (isCheck.length > 0) {
+      alert("Product is already added");
+    } else {
+      let newProduct = { ...product, quantity: 1 };
+      cartData = [...cartData, newProduct];
+      localStorage.setItem("cartData", JSON.stringify(cartData));
+    }
   };
   return (
     <>
