@@ -1,10 +1,11 @@
-.riddels > div {
+.parentBox > div {
   width: 50%;
+  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
-  border: 1px solid red;
+  padding: 80px;
+  border-radius: 10px;
   gap: 20px;
   height: 50px;
   margin: auto;
@@ -12,43 +13,40 @@
   text-align: center;
   /* margin: auto; */
 }
-.riddels img {
+.parentBox img {
   width: 50px;
 }
 
-.riddels > div > p + p {
+.parentBox > div > p + p {
   background-color: green;
   color: white;
   padding: 5px 5px;
+  /* width: 30px; */
   text-align: center;
   border-radius: 10px;
 }
-section {
-}
-.total {
-  border: 2px solid black;
-  position: absolute;
-  position: sticky;
-  top: 0px;
-  left: 80%;
-  width: 300px;
-  padding: 10px;
-  top: 10%;
-}
 
+.quantity {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 @media only screen and (max-width: 480px) and (min-width: 320px) {
-  .riddels > div {
+  .parentBox > div {
     width: 100%;
     margin: auto;
     justify-content: center;
     padding: 20px;
     font-size: 9px;
   }
-  .riddels img {
+  .parentBox img {
     width: 30px;
   }
-  .riddels > div > h3 {
+  .parentBox > div > h3 {
     font-size: 8px;
+    text-align: center;
   }
 }
 .price {
@@ -56,22 +54,34 @@ section {
   color: black;
   width: 200px;
 }
+.makepay {
+  display: block;
+  margin: auto;
+}
+h3 {
+  text-align: center;
+}
 
 /* Tab */
 @media only screen and (max-width: 768px) and (min-width: 481px) {
-  .riddels > div {
+  .parentBox > div {
     width: 100%;
     margin: auto;
     justify-content: center;
     padding: 20px;
     font-size: 9px;
   }
-  .riddels img {
+  .parentBox img {
     width: 30px;
   }
-  .riddels > div > h3 {
+  .parentBox > div > h3 {
     font-size: 8px;
+    text-align: center;
   }
+}
+.delete {
+  border: none;
+  background-color: transparent;
 }
 
 /* Laptops */
@@ -80,7 +90,7 @@ section {
 
 /*  xs */
 @media only screen and (max-width: 653px) and (min-width: 280px) {
-  .riddels > div {
+  .parentBox > div {
     width: 100%;
     margin: auto;
     justify-content: center;
@@ -88,7 +98,7 @@ section {
     padding: 20px;
     font-size: 9px;
   }
-  .riddels img {
+  .parentBox img {
     width: 20px;
   }
 }
