@@ -13,7 +13,7 @@ This is an e-commerce website project built with React.js. It provides a complet
 1. Clone the repository: `git clone https://github.com/your-username/e-commerce-website.git`
 2. Install dependencies: `npm install`
 3. Run the application: `npm start`
-5. Access the website at `http://localhost:3000`
+4. Access the website at `http://localhost:3000`
 
 ## Contributing
 
@@ -28,3 +28,4 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+![Alt Text](/public/home.png)
