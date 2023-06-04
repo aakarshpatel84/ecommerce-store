@@ -28,3 +28,7 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## Image
+
+<img src="relative/path/to/image.png" alt="Alt Text">
