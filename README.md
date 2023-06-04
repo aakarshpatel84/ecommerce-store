@@ -31,4 +31,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Image
 
-![Home](public/home.png)
+<img src="/public/home.png" alt="Alt Text">
